@@ -104,11 +104,16 @@ public class RepositoryServiceImpl implements RepositoryService {
 
     /**
      * Some dummy examples to play with
+     *
      */
     private void loadExamples() {
+        // flashcard
         FlashCard fc = new FlashCard(1, "Astronomy");
         addFlashCard(fc);
+
+        // question
         Question q1 = new Question(1, "Earth to the moon", "What is the distance from the Earth to the Moon");
+        //answer
         q1.addAnswer(new Answer(1, "250000 Km", false));
         q1.addAnswer(new Answer(2, "345000 Km", false));
         q1.addAnswer(new Answer(3, "550223 Km", false));
